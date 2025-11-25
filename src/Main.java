@@ -22,7 +22,7 @@ public class Main {
      * @return the sum of the two integers
      */
     public static int add(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+       return a + b;
     }
 
     /**
@@ -32,7 +32,7 @@ public class Main {
      * @return
      */
     public static boolean isEven(int number) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return number % 2 == 0;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Main {
      * @return
      */
     public static double areaOfCircle(double radius) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return Math.PI * radius * radius;
     }
 
     /**
