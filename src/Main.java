@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -73,7 +74,7 @@ public class Main {
      * @return
      */
     public static int maxOfThree(int a, int b, int c) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return Math.max(a, Math.max(b, c));
     }
 
     /**
@@ -83,7 +84,7 @@ public class Main {
      * @return
      */
     public static double toFahrenheit(double celsius) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return celsius * 9 / 5 + 32;
     }
 
     /**
@@ -94,7 +95,7 @@ public class Main {
      * @return
      */
     public static double applyDiscount(double price, double discount) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return price * (1 - discount / 100.0);
     }
 
 
@@ -105,7 +106,9 @@ public class Main {
      * @return
      */
     public static List<Integer> filterEvenNumbers(List<Integer> numbers) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -115,7 +118,7 @@ public class Main {
      * @return
      */
     public static int factorial(int n) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return (n <= 1) ? 1 : n * factorial(n - 1);
     }
 
     /**
@@ -125,7 +128,7 @@ public class Main {
      * @return
      */
     public static int fibonacci(int n) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return (n <= 1) ? n : fibonacci(n - 1) + fibonacci(n - 2);
     }
 
 
