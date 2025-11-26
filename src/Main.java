@@ -57,7 +57,11 @@ public class Main {
      * @return
      */
     public static String grade(int score) {
-        throw new UnsupportedOperationException("Not yet implemented!");
+        return (score >= 90) ? "A" :
+                (score >= 80) ? "B" :
+                        (score >= 70) ? "C" :
+                                (score >= 60) ? "D" :
+                                        "F";
     }
 
     /**
